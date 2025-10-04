@@ -9,6 +9,11 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Pizzas :p",
   description: "de Jimy y Nhoa",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 }
 
 export default function RootLayout({
