@@ -110,13 +110,13 @@ export function PizzaUploadForm({ onSuccess }: { onSuccess?: () => void }) {
   return (
     <Card className="border-orange-200">
       <CardHeader>
-        <CardTitle className="text-2xl text-orange-600">Agregar Nueva Pizza</CardTitle>
+        <CardTitle className="text-2xl text-orange-600">Agregar Nueva Receta</CardTitle>
         <CardDescription>Sube tu creacion mas reciente</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <Label htmlFor="name">Nombre de la Pizza</Label>
+            <Label htmlFor="name">Nombre de la Receta</Label>
             <Input
               id="name"
               value={name}
@@ -127,7 +127,7 @@ export function PizzaUploadForm({ onSuccess }: { onSuccess?: () => void }) {
           </div>
 
           <div className="flex flex-col gap-2">
-            <Label htmlFor="image">Foto de la Pizza</Label>
+            <Label htmlFor="image">Foto del plato</Label>
             <Input id="image" type="file" accept="image/*" onChange={handleImageChange} required />
             {imagePreview && (
               <div className="mt-2 rounded-lg overflow-hidden border-2 border-orange-200">
@@ -174,7 +174,7 @@ export function PizzaUploadForm({ onSuccess }: { onSuccess?: () => void }) {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-2">
-              <Label htmlFor="nhoa-rating">Calificacion de Nhoa (0-10)</Label>
+              <Label htmlFor="nhoa-rating">Nota de Nhoa (0-10)</Label>
               <Input
                 id="nhoa-rating"
                 type="number"
@@ -186,7 +186,7 @@ export function PizzaUploadForm({ onSuccess }: { onSuccess?: () => void }) {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <Label htmlFor="jimy-rating">Calificacion de Jimy (0-10)</Label>
+              <Label htmlFor="jimy-rating">Nota de Jimy (0-10)</Label>
               <Input
                 id="jimy-rating"
                 type="number"
@@ -210,7 +210,7 @@ export function PizzaUploadForm({ onSuccess }: { onSuccess?: () => void }) {
               id="comment"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
-              placeholder="Notas sobre esta pizza..."
+              placeholder="Notas sobre el plato..."
               rows={3}
             />
           </div>
