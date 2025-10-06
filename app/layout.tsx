@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Pizzas :p",
+  title: "Recetas :p",
   description: "de Jimy y Nhoa",
   icons: {
     icon: "/logo.svg",
