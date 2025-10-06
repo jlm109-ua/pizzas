@@ -7,7 +7,7 @@ export default function HomePage() {
       <Navigation />
       <main className="max-w-7xl mx-auto p-4 md:p-8">
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-orange-600 mb-2">Todas las Pizzas</h1>
+          <h1 className="text-4xl font-bold text-orange-600 mb-2">Todas las recetas</h1>
         </div>
         <PizzaList />
       </main>
